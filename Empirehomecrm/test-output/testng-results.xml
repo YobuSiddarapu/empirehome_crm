@@ -2,76 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-13T15:48:13 IST" name="Default suite" finished-at="2023-10-13T15:48:48 IST" duration-ms="34713">
+  <suite started-at="2023-10-19T10:37:47 IST" name="Default suite" finished-at="2023-10-19T10:37:59 IST" duration-ms="11612">
     <groups>
     </groups>
-    <test started-at="2023-10-13T15:48:13 IST" name="Default test" finished-at="2023-10-13T15:48:48 IST" duration-ms="34713">
-      <class name="com.testcases.addproduct_test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.addproduct_test@1530c739]" started-at="2023-10-13T15:48:14 IST" name="setup" finished-at="2023-10-13T15:48:20 IST" duration-ms="6096" status="PASS">
+    <test started-at="2023-10-19T10:37:47 IST" name="Default test" finished-at="2023-10-19T10:37:59 IST" duration-ms="11612">
+      <class name="com.testcases.Loggingout">
+        <test-method is-config="true" signature="log()[pri:0, instance:com.testcases.Loggingout@ffaa6af]" started-at="2023-10-19T10:37:47 IST" name="log" finished-at="2023-10-19T10:37:51 IST" duration-ms="4023" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Addproductvalidation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testcases.addproduct_test@1530c739]" started-at="2023-10-13T15:48:20 IST" name="Addproductvalidation" data-provider="dataload" finished-at="2023-10-13T15:48:48 IST" duration-ms="27551" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Y2252]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DINING TABLE]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[DINNING TABLE]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[BLACK]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[50000]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- log -->
+        <test-method signature="Logedout()[pri:0, instance:com.testcases.Loggingout@ffaa6af]" started-at="2023-10-19T10:37:51 IST" name="Logedout" finished-at="2023-10-19T10:37:59 IST" duration-ms="7551" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Addproductvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.addproduct_test@1530c739]" started-at="2023-10-13T15:48:48 IST" name="teardown" finished-at="2023-10-13T15:48:48 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Logedout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Loggingout@ffaa6af]" started-at="2023-10-19T10:37:59 IST" name="teardown" finished-at="2023-10-19T10:37:59 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.testcases.addproduct_test -->
+      </class> <!-- com.testcases.Loggingout -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

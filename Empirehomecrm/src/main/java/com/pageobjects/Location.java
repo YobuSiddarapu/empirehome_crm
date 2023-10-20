@@ -19,8 +19,8 @@ public class Location extends Basetest{
 	WebElement LocationName;
 	@FindBy(xpath="//button[normalize-space()='Save']")
 	WebElement Save;
-	//@FindBy(xpath=)
-	//WebElement
+	@FindBy(xpath="//input[@class='form-control form-control-sm']")
+	WebElement sarch;
 	public Location() {
 		PageFactory.initElements(driver,this);
 	}
@@ -37,6 +37,8 @@ public class Location extends Basetest{
 		LocationName.sendKeys("Padur");
 		Thread.sleep(3000);
 		Save.click();
+		Thread.sleep(3000);
+		sarch.sendKeys("Padur");
 		
 		
 		

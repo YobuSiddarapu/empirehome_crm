@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-19T10:37:47 IST" name="Default suite" finished-at="2023-10-19T10:37:59 IST" duration-ms="11612">
+  <suite started-at="2023-10-20T10:56:44 IST" name="Default suite" finished-at="2023-10-20T10:57:10 IST" duration-ms="26623">
     <groups>
     </groups>
-    <test started-at="2023-10-19T10:37:47 IST" name="Default test" finished-at="2023-10-19T10:37:59 IST" duration-ms="11612">
-      <class name="com.testcases.Loggingout">
-        <test-method is-config="true" signature="log()[pri:0, instance:com.testcases.Loggingout@ffaa6af]" started-at="2023-10-19T10:37:47 IST" name="log" finished-at="2023-10-19T10:37:51 IST" duration-ms="4023" status="PASS">
+    <test started-at="2023-10-20T10:56:44 IST" name="Default test" finished-at="2023-10-20T10:57:10 IST" duration-ms="26623">
+      <class name="com.testcases.Location1">
+        <test-method is-config="true" signature="Add()[pri:0, instance:com.testcases.Location1@ffaa6af]" started-at="2023-10-20T10:56:44 IST" name="Add" finished-at="2023-10-20T10:56:50 IST" duration-ms="5947" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- log -->
-        <test-method signature="Logedout()[pri:0, instance:com.testcases.Loggingout@ffaa6af]" started-at="2023-10-19T10:37:51 IST" name="Logedout" finished-at="2023-10-19T10:37:59 IST" duration-ms="7551" status="PASS">
+        </test-method> <!-- Add -->
+        <test-method signature="Setup()[pri:0, instance:com.testcases.Location1@ffaa6af]" started-at="2023-10-20T10:56:50 IST" name="Setup" finished-at="2023-10-20T10:57:10 IST" duration-ms="20640" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Logedout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Loggingout@ffaa6af]" started-at="2023-10-19T10:37:59 IST" name="teardown" finished-at="2023-10-19T10:37:59 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Location1@ffaa6af]" started-at="2023-10-20T10:57:10 IST" name="teardown" finished-at="2023-10-20T10:57:10 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.testcases.Loggingout -->
+      </class> <!-- com.testcases.Location1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

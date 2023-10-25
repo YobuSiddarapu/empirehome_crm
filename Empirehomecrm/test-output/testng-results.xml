@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-25T08:47:45 IST" name="Default suite" finished-at="2023-10-25T08:48:21 IST" duration-ms="35850">
+  <suite started-at="2023-10-25T10:15:58 IST" name="Default suite" finished-at="2023-10-25T10:16:32 IST" duration-ms="33929">
     <groups>
     </groups>
-    <test started-at="2023-10-25T08:47:45 IST" name="Default test" finished-at="2023-10-25T08:48:21 IST" duration-ms="35850">
+    <test started-at="2023-10-25T10:15:58 IST" name="Default test" finished-at="2023-10-25T10:16:32 IST" duration-ms="33929">
       <class name="com.testcases.Company1">
-        <test-method is-config="true" signature="add()[pri:0, instance:com.testcases.Company1@ffaa6af]" started-at="2023-10-25T08:47:45 IST" name="add" finished-at="2023-10-25T08:47:51 IST" duration-ms="5635" status="PASS">
+        <test-method is-config="true" signature="add()[pri:0, instance:com.testcases.Company1@ffaa6af]" started-at="2023-10-25T10:15:58 IST" name="add" finished-at="2023-10-25T10:16:01 IST" duration-ms="3482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add -->
-        <test-method signature="Setup()[pri:0, instance:com.testcases.Company1@ffaa6af]" started-at="2023-10-25T08:47:51 IST" name="Setup" finished-at="2023-10-25T08:48:21 IST" duration-ms="30173" status="FAIL">
+        <test-method signature="Setup()[pri:0, instance:com.testcases.Company1@ffaa6af]" started-at="2023-10-25T10:16:01 IST" name="Setup" finished-at="2023-10-25T10:16:32 IST" duration-ms="30420" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [http://empirehome.myprojectsonline.co.in/Master/Company] but found [http://empirehome.myprojectsonline.co.in/Master/CompanyData]]]>
@@ -59,7 +59,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Company1@ffaa6af]" started-at="2023-10-25T08:48:21 IST" name="teardown" finished-at="2023-10-25T08:48:21 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Company1@ffaa6af]" started-at="2023-10-25T10:16:32 IST" name="teardown" finished-at="2023-10-25T10:16:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

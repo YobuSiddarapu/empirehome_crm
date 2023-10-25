@@ -1,5 +1,8 @@
 package com.pageobjects;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -40,15 +43,33 @@ public class Company extends Basetest{
 		Thread.sleep(3000);
 		pencil.click();
 		Thread.sleep(3000);
+		Robot r=new Robot();
+		CompanyName.click();
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_A);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		r.keyRelease(KeyEvent.VK_A);
 		CompanyName.sendKeys("EMPIRE HOME");
+		
+		
 		Thread.sleep(3000);
 		CompanyAddress.sendKeys("8-2-686/B/2/N, 8-2-686/B/2/N/1F, ROAD NO-12\r\n"
 				+ "HYDERABAD, TELANGANA 500 034 INDIA\r\n"
 				+ "GSTIN/UIN: 36AJKPM8342C1Z6, State Name :  Telangana, Code : 36");
 		Thread.sleep(3000);
-		CEOName.sendKeys("KABIR MANGHANANI");
+		CEOName.click();
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_A);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		r.keyRelease(KeyEvent.VK_A);
+		CEOName.sendKeys("YOBU SIDDARAPU");
 		Thread.sleep(3000);
-		CEONumber.sendKeys("89895jj22@");
+		CEONumber.click();
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_A);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		r.keyRelease(KeyEvent.VK_A);
+		CEONumber.sendKeys("6379978514");
 		Thread.sleep(3000);
 		Save.click();
 		

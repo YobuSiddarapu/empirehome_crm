@@ -35,12 +35,12 @@ public class NewEmploye extends Basetest{
 		Staff.click();
 		Thread.sleep(3000);
 		Addstaff.click();
-		Name.sendKeys("yobu");
+		Name.sendKeys(prop.getProperty("Name"));
 		Thread.sleep(3000);
-		Mail.sendKeys("yobu.2252marolix@gmail.com");
+		Mail.sendKeys(prop.getProperty("Mail"));
 		Thread.sleep(3000);
-		Mobile.sendKeys("6379978514");
-		Disgni.sendKeys("sales");
+		Mobile.sendKeys(prop.getProperty("Mobile"));
+		Disgni.sendKeys(prop.getProperty("Disgni"));
 		Thread.sleep(3000);
 		Save.click();
 		

@@ -43,11 +43,11 @@ public class Subcategories extends Basetest {
 		Thread.sleep(3000);
 		sc.selectByIndex(2);
 		Thread.sleep(3000);
-		name1.sendKeys("Tv");
+		name1.sendKeys(prop.getProperty("name1"));
 		Thread.sleep(3000);
 		save.click();
 		Thread.sleep(3000);
-		sarch.sendKeys("Tv");
+		sarch.sendKeys(prop.getProperty("sarch"));
 		
 		
 		

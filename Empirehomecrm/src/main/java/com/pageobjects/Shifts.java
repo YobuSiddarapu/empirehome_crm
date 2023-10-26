@@ -39,19 +39,19 @@ public class Shifts extends Basetest {
 		Thread.sleep(3000);
 		Add.click();
 		Thread.sleep(3000);
-		ShiftName.sendKeys("General");
+		ShiftName.sendKeys(prop.getProperty("ShiftName"));
 		Thread.sleep(3000);
 		StartTime.click();
 		Thread.sleep(3000);
-		StartTime.sendKeys("0910");
+		StartTime.sendKeys(prop.getProperty("StartTime"));
 		Thread.sleep(3000);
 		EndTime.click();
 		Thread.sleep(3000);
-		EndTime.sendKeys("0610");
+		EndTime.sendKeys(prop.getProperty("EndTime"));
 		Thread.sleep(3000);
 		Save.click();
 		Thread.sleep(3000);
-		sarch.sendKeys("General");
+		sarch.sendKeys(prop.getProperty("sarch"));
 		
 		
 		

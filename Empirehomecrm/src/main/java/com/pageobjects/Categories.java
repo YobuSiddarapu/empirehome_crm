@@ -39,11 +39,11 @@ public class Categories extends Basetest{
 		Thread.sleep(3000);
 		Addnew.click();
 		Thread.sleep(3000);
-		Catagoryname.sendKeys("Dell");
+		Catagoryname.sendKeys(prop.getProperty("Catagoryname"));
 		Thread.sleep(3000);
 		Save.click();
 		Thread.sleep(3000);
-		Sarch.sendKeys("Dell");
+		Sarch.sendKeys(prop.getProperty("Sarch"));
 		
 		
 		

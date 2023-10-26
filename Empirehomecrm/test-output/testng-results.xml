@@ -2,29 +2,29 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-25T10:15:58 IST" name="Default suite" finished-at="2023-10-25T10:16:32 IST" duration-ms="33929">
+  <suite started-at="2023-10-26T14:55:59 IST" name="Default suite" finished-at="2023-10-26T14:56:36 IST" duration-ms="36626">
     <groups>
     </groups>
-    <test started-at="2023-10-25T10:15:58 IST" name="Default test" finished-at="2023-10-25T10:16:32 IST" duration-ms="33929">
-      <class name="com.testcases.Company1">
-        <test-method is-config="true" signature="add()[pri:0, instance:com.testcases.Company1@ffaa6af]" started-at="2023-10-25T10:15:58 IST" name="add" finished-at="2023-10-25T10:16:01 IST" duration-ms="3482" status="PASS">
+    <test started-at="2023-10-26T14:55:59 IST" name="Default test" finished-at="2023-10-26T14:56:36 IST" duration-ms="36626">
+      <class name="com.testcases.Holiday1">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.testcases.Holiday1@ffaa6af]" started-at="2023-10-26T14:55:59 IST" name="Setup" finished-at="2023-10-26T14:56:03 IST" duration-ms="3418" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add -->
-        <test-method signature="Setup()[pri:0, instance:com.testcases.Company1@ffaa6af]" started-at="2023-10-25T10:16:01 IST" name="Setup" finished-at="2023-10-25T10:16:32 IST" duration-ms="30420" status="FAIL">
+        </test-method> <!-- Setup -->
+        <test-method signature="Addholiday()[pri:0, instance:com.testcases.Holiday1@ffaa6af]" started-at="2023-10-26T14:56:03 IST" name="Addholiday" finished-at="2023-10-26T14:56:36 IST" duration-ms="33177" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [http://empirehome.myprojectsonline.co.in/Master/Company] but found [http://empirehome.myprojectsonline.co.in/Master/CompanyData]]]>
+              <![CDATA[expected [http://empirehome.myprojectsonline.co.in/Master/HolidayTypedata] but found [http://empirehome.myprojectsonline.co.in/Master/Holidays]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://empirehome.myprojectsonline.co.in/Master/Company] but found [http://empirehome.myprojectsonline.co.in/Master/CompanyData]
+              <![CDATA[java.lang.AssertionError: expected [http://empirehome.myprojectsonline.co.in/Master/HolidayTypedata] but found [http://empirehome.myprojectsonline.co.in/Master/Holidays]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.testcases.Company1.Setup(Company1.java:29)
+at com.testcases.Holiday1.Addholiday(Holiday1.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,12 +58,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Company1@ffaa6af]" started-at="2023-10-25T10:16:32 IST" name="teardown" finished-at="2023-10-25T10:16:32 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Addholiday -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Holiday1@ffaa6af]" started-at="2023-10-26T14:56:36 IST" name="teardown" finished-at="2023-10-26T14:56:36 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.testcases.Company1 -->
+      </class> <!-- com.testcases.Holiday1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

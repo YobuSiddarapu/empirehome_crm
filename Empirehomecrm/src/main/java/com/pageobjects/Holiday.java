@@ -1,5 +1,6 @@
 package com.pageobjects;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -27,6 +28,10 @@ public class Holiday extends Basetest{
 	WebElement Holidaydec;
 	@FindBy(xpath="//button[normalize-space()='Save']")
 	WebElement Save;
+	@FindBy(xpath="//i[@class='fa fa-trash-o']")
+	WebElement Delete;
+	@FindBy(xpath="//button[@class='swal-button swal-button--yes']")
+	WebElement Alertbutton;
 	
 	public Holiday() {
 		PageFactory.initElements(driver, this);
@@ -44,15 +49,20 @@ public class Holiday extends Basetest{
 		Addnew.click();
 		Thread.sleep(3000);
 
-		Date.sendKeys("25122023");
-		name.sendKeys("Christmas");
+		Date.sendKeys(prop.getProperty("Date"));
+		name.sendKeys(prop.getProperty("Name"));
 		Thread.sleep(3000);
 
-		Holidaydec.sendKeys("Going to church");
+		Holidaydec.sendKeys(prop.getProperty("Holidaydec"));
 		Thread.sleep(3000);
 
 		Save.click();
-		
+		Thread.sleep(3000);
+		Delete.click();
+		Thread.sleep(3000);
+		//Alert ae=driver.switchTo().alert();
+		Thread.sleep(3000);
+		Alertbutton.click();
 		
 		
 		

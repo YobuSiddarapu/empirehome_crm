@@ -34,11 +34,11 @@ public class AddCustomer extends Basetest {
 		Customers.click();
 		AddCustomer.click();
 		Thread.sleep(3000);
-		CustomerName.sendKeys("yobu");
-		Mobile.sendKeys("6379978514");
+		CustomerName.sendKeys(prop.getProperty("CustomerName"));
+		Mobile.sendKeys(prop.getProperty("Mobile"));
 		Thread.sleep(3000);
-		Email.sendKeys("yobu.2252marolix@gmail.com");
-		whatsapp.sendKeys("6379978514");
+		Email.sendKeys(prop.getProperty("Email"));
+		whatsapp.sendKeys(prop.getProperty("whatsapp"));
 		save.click();
 		
 		

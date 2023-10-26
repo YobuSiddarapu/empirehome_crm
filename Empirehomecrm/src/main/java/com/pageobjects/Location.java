@@ -34,11 +34,11 @@ public class Location extends Basetest{
 		Thread.sleep(3000);
 		Add.click();
 		Thread.sleep(3000);
-		LocationName.sendKeys("Padur");
+		LocationName.sendKeys(prop.getProperty("LocationName"));
 		Thread.sleep(3000);
 		Save.click();
 		Thread.sleep(3000);
-		sarch.sendKeys("Padur");
+		sarch.sendKeys(prop.getProperty("sarch"));
 		
 		
 		

@@ -40,11 +40,11 @@ public class Condition extends Basetest {
 		Thread.sleep(3000);
 		Add.click();
 		Thread.sleep(3000);
-		ConditionName.sendKeys("nice Product");
+		ConditionName.sendKeys(prop.getProperty("ConditionName"));
 		Thread.sleep(3000);
 		Save.click();
 		Thread.sleep(3000);
-		sarch.sendKeys("nice Product");
+		sarch.sendKeys(prop.getProperty("sarch"));
 		
 		
 		

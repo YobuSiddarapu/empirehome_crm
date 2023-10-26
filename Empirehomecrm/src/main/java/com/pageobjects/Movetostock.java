@@ -17,7 +17,7 @@ public class Movetostock extends Basetest{
 	@FindBy(xpath="//select[@id='movedFromD']")
 	WebElement movedFromD;
 	@FindBy(xpath="//input[@id='MoStNot']")
-	WebElement Notes;
+	WebElement notes;
 	@FindBy(xpath="//span[@id='select2-invId-container']")
 	WebElement Model;
 	@FindBy(xpath="//table[@id='daiomndsData']//th[contains(text(),'Model Number')]")
@@ -43,14 +43,14 @@ public class Movetostock extends Basetest{
 		movedFromD.click();
 		Select sc=new Select(movedFromD);
 		sc.selectByIndex(1);
-		Notes.sendKeys("3");
+		notes.sendKeys(prop.getProperty("notes"));
 		Thread.sleep(3000);
-		Model.sendKeys("Y2252");
+		Model.sendKeys(prop.getProperty("Model"));
 		Thread.sleep(3000);
 		Select se=new Select(Modelnumber);
 		Thread.sleep(3000);
 		se.selectByIndex(0);
-		Quality.sendKeys("3");
+		Quality.sendKeys(prop.getProperty("Quality"));
 		Add.click();
 		
 		

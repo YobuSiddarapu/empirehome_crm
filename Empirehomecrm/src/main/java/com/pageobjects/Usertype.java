@@ -1,5 +1,6 @@
 package com.pageobjects;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -23,6 +24,10 @@ public class Usertype extends Basetest {
 	WebElement Save;
 	@FindBy(xpath="//input[@class='form-control form-control-sm']")
 	WebElement Sarch;
+	@FindBy(xpath="//i[@class='fa fa-pencil']")
+	WebElement Edit;
+	@FindBy(xpath="//button[@data-toggle='modal']")
+	WebElement modal;
 	public Usertype() {
 		PageFactory.initElements(driver, this);
 	}
@@ -45,6 +50,13 @@ public class Usertype extends Basetest {
 		Save.click();
 		Thread.sleep(3000);
 		Sarch.sendKeys(prop.getProperty("TypeName"));
+		Thread.sleep(3000);
+		Edit.click();
+		Thread.sleep(3000);
+		driver.navigate().back();
+		modal.click();
+		Alert ae=driver.switchTo().alert();
+		ae.accept();
 		
 		
 		

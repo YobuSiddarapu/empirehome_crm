@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-27T11:02:25 IST" name="Default suite" finished-at="2023-10-27T11:03:04 IST" duration-ms="38379">
+  <suite started-at="2023-10-27T12:01:09 IST" name="Default suite" finished-at="2023-10-27T12:01:51 IST" duration-ms="41604">
     <groups>
     </groups>
-    <test started-at="2023-10-27T11:02:25 IST" name="Default test" finished-at="2023-10-27T11:03:04 IST" duration-ms="38379">
-      <class name="com.testcases.Usertype1">
-        <test-method is-config="true" signature="Add()[pri:0, instance:com.testcases.Usertype1@ffaa6af]" started-at="2023-10-27T11:02:25 IST" name="Add" finished-at="2023-10-27T11:02:34 IST" duration-ms="9163" status="PASS">
+    <test started-at="2023-10-27T12:01:09 IST" name="Default test" finished-at="2023-10-27T12:01:51 IST" duration-ms="41604">
+      <class name="com.testcases.Shifts1">
+        <test-method is-config="true" signature="Add()[pri:0, instance:com.testcases.Shifts1@ffaa6af]" started-at="2023-10-27T12:01:09 IST" name="Add" finished-at="2023-10-27T12:01:14 IST" duration-ms="4618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add -->
-        <test-method signature="Setup()[pri:0, instance:com.testcases.Usertype1@ffaa6af]" started-at="2023-10-27T11:02:34 IST" name="Setup" finished-at="2023-10-27T11:03:04 IST" duration-ms="29176" status="PASS">
+        <test-method signature="Setup()[pri:0, instance:com.testcases.Shifts1@ffaa6af]" started-at="2023-10-27T12:01:14 IST" name="Setup" finished-at="2023-10-27T12:01:51 IST" duration-ms="36949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Usertype1@ffaa6af]" started-at="2023-10-27T11:03:04 IST" name="teardown" finished-at="2023-10-27T11:03:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Shifts1@ffaa6af]" started-at="2023-10-27T12:01:51 IST" name="teardown" finished-at="2023-10-27T12:01:51 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.testcases.Usertype1 -->
+      </class> <!-- com.testcases.Shifts1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

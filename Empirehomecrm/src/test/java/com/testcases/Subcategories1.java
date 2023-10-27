@@ -27,7 +27,7 @@ public void Setup() throws Throwable {
 	Login.verifylogin();
 	Sub.Addsubcategories();
 	String Url=driver.getCurrentUrl();
-	Assert.assertEquals(Url,"http://empirehome.myprojectsonline.co.in/Master/Subcategories?catId=95");
+	Assert.assertEquals(Url,"http://empirehome.myprojectsonline.co.in/Master/SubCategories?catId=564");
 }
 @AfterMethod
 public void teardown() {

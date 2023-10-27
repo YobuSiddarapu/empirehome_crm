@@ -28,7 +28,7 @@ public class AddCustomer1 extends Basetest {
 		Login.verifylogin();
 		Add.AddnewCus();
 		String Url=driver.getCurrentUrl();
-		Assert.assertEquals(Url,"http://empirehome.myprojectsonline.co.in/User/CustomerData");
+		Assert.assertEquals(Url,"http://empirehome.myprojectsonline.co.in/User/CustomerList");
 		
 		
 		

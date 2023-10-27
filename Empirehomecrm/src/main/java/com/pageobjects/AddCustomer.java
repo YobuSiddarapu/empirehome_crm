@@ -23,6 +23,14 @@ public class AddCustomer extends Basetest {
 	WebElement whatsapp;
 	@FindBy(xpath="//button[normalize-space()='Save']")
 	WebElement save;
+	@FindBy(xpath="//input[@class='form-control form-control-sm']")
+	WebElement Sarch;
+	@FindBy(xpath="//tbody/tr[1]/td[11]/a[1]/button[1]")
+	WebElement Edit;
+	@FindBy(xpath="//button[@class='btn btn-danger btn-sm']")
+	WebElement Delete;
+	@FindBy(xpath="//button[@class='swal-button swal-button--yes']")
+	WebElement Deletebtn;
 	public AddCustomer() {
 		PageFactory.initElements(driver, this);
 	}
@@ -40,7 +48,16 @@ public class AddCustomer extends Basetest {
 		Email.sendKeys(prop.getProperty("Email"));
 		whatsapp.sendKeys(prop.getProperty("whatsapp"));
 		save.click();
-		
+		Thread.sleep(3000);
+		Sarch.sendKeys(prop.getProperty("CustomerName"));
+		Thread.sleep(3000);
+		Edit.click();
+		Thread.sleep(3000);
+		driver.navigate().back();
+		Thread.sleep(3000);
+		Delete.click();
+		Thread.sleep(3000);
+		Deletebtn.click();
 		
 		
 		

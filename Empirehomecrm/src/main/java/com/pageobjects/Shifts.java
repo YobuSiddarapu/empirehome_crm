@@ -25,7 +25,10 @@ public class Shifts extends Basetest {
 	WebElement Save;
 	@FindBy(xpath="//input[@class='form-control form-control-sm']")
 	WebElement sarch;
-	
+	@FindBy(xpath="//tbody/tr[10]/td[5]/a[2]/button[1]")
+	WebElement delete;
+	@FindBy(xpath="//button[@class='swal-button swal-button--yes']")
+	WebElement Deletebtn;
 	public Shifts() {
 		PageFactory.initElements(driver, this);
 	}
@@ -51,8 +54,11 @@ public class Shifts extends Basetest {
 		Thread.sleep(3000);
 		Save.click();
 		Thread.sleep(3000);
-		sarch.sendKeys(prop.getProperty("sarch"));
-		
+		sarch.sendKeys(prop.getProperty("sarch1"));
+		Thread.sleep(3000);
+		delete.click();
+		Thread.sleep(3000);
+		Deletebtn.click();
 		
 		
 		

@@ -28,6 +28,8 @@ public class Holiday extends Basetest{
 	WebElement Holidaydec;
 	@FindBy(xpath="//button[normalize-space()='Save']")
 	WebElement Save;
+	@FindBy(xpath="//i[@class='fa fa-pencil']")
+	WebElement Edit;
 	@FindBy(xpath="//i[@class='fa fa-trash-o']")
 	WebElement Delete;
 	@FindBy(xpath="//button[@class='swal-button swal-button--yes']")
@@ -57,6 +59,10 @@ public class Holiday extends Basetest{
 		Thread.sleep(3000);
 
 		Save.click();
+		Thread.sleep(3000);
+		Edit.click();
+		Thread.sleep(3000);
+		driver.navigate().back();
 		Thread.sleep(3000);
 		Delete.click();
 		Thread.sleep(3000);

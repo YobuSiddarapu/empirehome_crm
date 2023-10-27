@@ -21,12 +21,12 @@ public class Condition extends Basetest {
 	WebElement Save;
 	@FindBy(xpath="//input[@class='form-control form-control-sm']")
 	WebElement sarch;
-	//@FindBy(xpath=)
-//	WebElement
-//	@FindBy(xpath=)
-//	WebElement
-//	@FindBy(xpath=)
-//	WebElement
+	@FindBy(xpath="//tr[@class='even']//a[1]//button[1]")
+	WebElement Edit;
+	@FindBy(xpath="//tr[@class='even']//i[@class='fa fa-trash-o']")
+	WebElement Delete;
+	@FindBy(xpath="//button[@class='swal-button swal-button--yes']")
+	WebElement Deletebtn;
 	public Condition() {
 		PageFactory.initElements(driver, this);
 	}
@@ -45,7 +45,14 @@ public class Condition extends Basetest {
 		Save.click();
 		Thread.sleep(3000);
 		sarch.sendKeys(prop.getProperty("sarch"));
-		
+		Thread.sleep(3000);
+		Edit.click();
+		Thread.sleep(3000);
+		driver.navigate().back();
+		Thread.sleep(3000);
+		Delete.click();
+		Thread.sleep(3000);
+		Deletebtn.click();
 		
 		
 		

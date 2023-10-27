@@ -21,10 +21,12 @@ public class Categories extends Basetest{
 	WebElement Save;
 	@FindBy(xpath="//input[@class='form-control form-control-sm']")
 	WebElement Sarch;
-	//@FindBy(xpath=)
-	//WebElement
-	//@FindBy(xpath=)
-	//WebElement
+	@FindBy(xpath="//i[@class='fa fa-pencil']")
+	WebElement Edit;
+	@FindBy(xpath="//button[@data-toggle='modal']")
+	WebElement Delete;
+	@FindBy(xpath="//button[@class='swal-button swal-button--yes']")
+	WebElement Deletebtn;
 	public Categories() {
 		PageFactory.initElements(driver,this);
 	}
@@ -44,6 +46,14 @@ public class Categories extends Basetest{
 		Save.click();
 		Thread.sleep(3000);
 		Sarch.sendKeys(prop.getProperty("Sarch"));
+		Thread.sleep(3000);
+		Edit.click();
+		Thread.sleep(3000);
+		driver.navigate().back();
+		Thread.sleep(3000);
+		Delete.click();
+		Thread.sleep(3000);
+		Deletebtn.click();
 		
 		
 		

@@ -24,6 +24,12 @@ public class Subcategories extends Basetest {
 	WebElement save;
 	@FindBy(xpath="//input[@class='form-control form-control-sm']")
 	WebElement sarch;
+	@FindBy(xpath="//a[1]//button[1]")
+	WebElement Edit;
+	@FindBy(xpath="//i[@class='fa fa-trash-o']")
+	WebElement Delete;
+	@FindBy(xpath="//button[@class='swal-button swal-button--yes']")
+	WebElement Deletebtn;
 	public Subcategories() {
 		PageFactory.initElements(driver, this);
 	}
@@ -48,7 +54,14 @@ public class Subcategories extends Basetest {
 		save.click();
 		Thread.sleep(3000);
 		sarch.sendKeys(prop.getProperty("sarch"));
-		
+		Thread.sleep(3000);
+		Edit.click();
+		Thread.sleep(3000);
+		driver.navigate().back();
+		Thread.sleep(3000);
+		Delete.click();
+		Thread.sleep(3000);
+		Deletebtn.click();
 		
 		
 		

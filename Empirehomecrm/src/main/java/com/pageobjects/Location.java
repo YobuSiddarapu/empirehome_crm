@@ -21,6 +21,12 @@ public class Location extends Basetest{
 	WebElement Save;
 	@FindBy(xpath="//input[@class='form-control form-control-sm']")
 	WebElement sarch;
+	@FindBy(xpath="//i[@class='fa fa-pencil']")
+	WebElement Edit;
+	@FindBy(xpath="//button[@class='btn btn-danger btn-sm']")
+	WebElement Delete;
+	@FindBy(xpath="//button[@class='swal-button swal-button--yes']")
+	WebElement Deletebtn;
 	public Location() {
 		PageFactory.initElements(driver,this);
 	}
@@ -39,6 +45,15 @@ public class Location extends Basetest{
 		Save.click();
 		Thread.sleep(3000);
 		sarch.sendKeys(prop.getProperty("sarch"));
+		Thread.sleep(3000);
+		Edit.click();
+		Thread.sleep(3000);
+		driver.navigate().back();
+		Thread.sleep(3000);
+		Delete.click();
+		Thread.sleep(3000);
+		Deletebtn.click();
+		
 		
 		
 		

@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.base.Basetest;
+import com.utils.Utils;
 
 public class Movetostock extends Basetest{
 	@FindBy(xpath="//span[@class='pe-7s-keypad']")
@@ -41,15 +42,12 @@ public class Movetostock extends Basetest{
 		Movetostock.click();
 		Thread.sleep(3000);
 		movedFromD.click();
-		Select sc=new Select(movedFromD);
-		sc.selectByIndex(1);
+		Utils.Select(movedFromD, 1);
 		notes.sendKeys(prop.getProperty("notes"));
 		Thread.sleep(3000);
 		Model.sendKeys(prop.getProperty("Model"));
 		Thread.sleep(3000);
-		Select se=new Select(Modelnumber);
-		Thread.sleep(3000);
-		se.selectByIndex(0);
+		Utils.Select(Modelnumber, 0);
 		Quality.sendKeys(prop.getProperty("Quality"));
 		Add.click();
 		

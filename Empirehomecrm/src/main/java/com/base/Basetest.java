@@ -39,10 +39,10 @@ public class Basetest {
 		}
 		
 		
-//		extentreports = new ExtentReports();
-//		ExtentSparkReporter spark= new ExtentSparkReporter(".\\target\\report.html");
-//	    extentreports.attachReporter(spark);
-//	    
+	extentreports = new ExtentReports();
+	ExtentSparkReporter spark= new ExtentSparkReporter(".\\target\\report.html");
+   extentreports.attachReporter(spark);
+    
 	  
 
 	}
@@ -60,7 +60,7 @@ public class Basetest {
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(15,TimeUnit.SECONDS);
-		driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("ur2"));
 		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		//extentreports.flush();

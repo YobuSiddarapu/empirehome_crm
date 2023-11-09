@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.base.Basetest;
+import com.utils.Utils;
 
 public class Subcategories extends Basetest {
 	@FindBy(xpath="//span[@class='pe-7s-keypad']")
@@ -45,9 +46,7 @@ public class Subcategories extends Basetest {
 		Thread.sleep(3000);
 		subcat.click();
 		Thread.sleep(3000);
-		Select sc=new Select(subcat);
-		Thread.sleep(3000);
-		sc.selectByIndex(2);
+		Utils.Select(subcat, 2);
 		Thread.sleep(3000);
 		name1.sendKeys(prop.getProperty("name1"));
 		Thread.sleep(3000);

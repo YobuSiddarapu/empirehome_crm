@@ -11,7 +11,7 @@ import com.base.Basetest;
 import com.pageobjects.Addproduct;
 import com.pageobjects.Loginfunctionality;
 import com.utils.*;
-import com.utils.Utils.utils;
+
 
 public class addproduct_test extends Basetest {
 
@@ -25,7 +25,7 @@ public class addproduct_test extends Basetest {
 	@DataProvider
 
 	public String[][] dataload() throws Throwable {
-		return utils.Data(sheetname1);
+		return Utils.Data(sheetname1);
 		
 	}
 

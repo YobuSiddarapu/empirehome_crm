@@ -1,5 +1,10 @@
 package com.utils;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,10 +18,12 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class Utils {
 
-	public static class utils {
+	
 
 		public static String[][] Data(String sheetname1) throws IOException {
 			FileInputStream fis = new FileInputStream(
@@ -46,6 +53,53 @@ public class Utils {
 			return data;
 
 		}
-	}
+	
+public static void robot(String path) throws Throwable {
+	Robot R=new Robot();
+	R.delay(2000);
+	StringSelection selection = new StringSelection(
+			path);
+	Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
+
+	R.keyPress(KeyEvent.VK_CONTROL);
+	R.keyPress(KeyEvent.VK_V);
+	R.keyRelease(KeyEvent.VK_V);
+	R.keyRelease(KeyEvent.VK_CONTROL);
+	R.keyPress(KeyEvent.VK_ENTER);
+	R.keyRelease(KeyEvent.VK_ENTER);
+	
+}
+public static void Select(WebElement value,int index) {
+	Select sc=new Select(value);
+	sc.selectByIndex(index);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

@@ -1,6 +1,5 @@
 package com.utils;
 
-import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
@@ -9,14 +8,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-import org.apache.commons.math3.analysis.function.Ceil;
-import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -24,7 +23,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Utils {
 
 	
-
+       
 		public static String[][] Data(String sheetname1) throws IOException {
 			FileInputStream fis = new FileInputStream(
 					"C:\\Users\\Yobu\\git\\EmpireHome_Crm_project\\Empirehomecrm\\src\\main\\java\\com\\testdata\\empire3.xlsx");
@@ -76,6 +75,16 @@ public static void Select(WebElement value,int index) {
 
 
 
+public static void takeScreenshotAtEndOfTest() throws IOException{
+	 
+  //File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+  String currentDir= System.getProperty("user.dir");
+ // FileUtils.copyFile(srcFile, new File(currentDir + "/screenshot" + System.currentTimeMillis() + ".png"));
+	
+	
+	
+	
+}
 
 
 

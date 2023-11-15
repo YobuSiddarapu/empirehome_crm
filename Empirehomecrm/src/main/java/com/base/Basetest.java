@@ -9,8 +9,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v113.domdebugger.model.EventListener;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -20,6 +22,7 @@ public class Basetest {
 	public static Properties prop;
 	FileInputStream file;
 	public static WebDriver driver;
+	public static EventFiringWebDriver e_driver;
 	protected ExtentReports extentreports;
 
 	public Basetest() {
@@ -58,6 +61,14 @@ public class Basetest {
 
 			driver = new FirefoxDriver();
 		}
+		e_driver = new EventFiringWebDriver(driver);
+		// Now create object of EventListerHandler to register it with EventFiringWebDriver
+//		listenerss = new EventListener();
+//		e_driver.register(listenerss);
+		driver = e_driver;
+
+		
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(15,TimeUnit.SECONDS);
 		driver.get(prop.getProperty("ur2"));

@@ -13,18 +13,20 @@ import org.openqa.selenium.devtools.v113.domdebugger.model.EventListener;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.utils.EventListners;
 
 public class Basetest {
 
 	public static Properties prop;
 	FileInputStream file;
 	public static WebDriver driver;
-	public static EventFiringWebDriver e_driver;
 	protected ExtentReports extentreports;
-
+	public static EventFiringWebDriver e_driver;
+	public static WebDriverEventListener listenerss;
 	public Basetest() {
 
 		try {
@@ -42,9 +44,9 @@ public class Basetest {
 		}
 		
 		
-	extentreports = new ExtentReports();
-	ExtentSparkReporter spark= new ExtentSparkReporter(".\\target\\report.html");
-   extentreports.attachReporter(spark);
+//	extentreports = new ExtentReports();
+//	ExtentSparkReporter spark= new ExtentSparkReporter(".\\target\\report.html");
+//   extentreports.attachReporter(spark);
     
 	  
 
@@ -63,15 +65,15 @@ public class Basetest {
 		}
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
-//		listenerss = new EventListener();
-//		e_driver.register(listenerss);
+		listenerss = new EventListners();
+		e_driver.register(listenerss);
 		driver = e_driver;
-
+		
 		
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(15,TimeUnit.SECONDS);
-		driver.get(prop.getProperty("ur2"));
+		driver.get(prop.getProperty("url"));
 		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		//extentreports.flush();

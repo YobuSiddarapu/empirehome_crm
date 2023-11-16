@@ -75,11 +75,11 @@ public static void Select(WebElement value,int index) {
 
 
 
-public static void takeScreenshotAtEndOfTest() throws IOException{
+public static void takeScreenshotAtEndOfTest(WebDriver driver) throws IOException{
 	 
-  //File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+  File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
   String currentDir= System.getProperty("user.dir");
- // FileUtils.copyFile(srcFile, new File(currentDir + "/screenshot" + System.currentTimeMillis() + ".png"));
+ FileUtils.copyFile(srcFile, new File(currentDir + "/screenshot" + System.currentTimeMillis() + ".png"));
 	
 	
 	

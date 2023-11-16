@@ -149,9 +149,9 @@ public class EventListners extends Basetest implements WebDriverEventListener {
 
 	@Override
 	public void onException(Throwable throwable, WebDriver driver) {
-		System.out.println("Exception occured"+ error);
+		
 		try {
-			com.utils.Utils.takeScreenshotAtEndOfTest();
+			com.utils.Utils.takeScreenshotAtEndOfTest(driver);
 			
 		} catch (IOException e) {
 			// TODO: handle exception

@@ -44,6 +44,7 @@ public class Company extends Basetest{
 		pencil.click();
 		Thread.sleep(3000);
 		//Robot r=new Robot();
+		CompanyName.clear();
 		CompanyName.sendKeys(prop.getProperty("CompanyName"));
 		
 //		r.keyPress(KeyEvent.VK_CONTROL);
@@ -54,6 +55,8 @@ public class Company extends Basetest{
 		
 		
 		Thread.sleep(3000);
+		CompanyAddress.clear();
+		Thread.sleep(3000);
 		CompanyAddress.sendKeys(prop.getProperty("CompanyAddress"));
 		Thread.sleep(3000);
 		CEOName.click();
@@ -61,6 +64,8 @@ public class Company extends Basetest{
 //		r.keyPress(KeyEvent.VK_A);
 //		r.keyRelease(KeyEvent.VK_CONTROL);
 //		r.keyRelease(KeyEvent.VK_A);
+		CEOName.clear();
+		Thread.sleep(3000);
 		CEOName.sendKeys(prop.getProperty("CEOName"));
 		Thread.sleep(3000);
 		CEONumber.click();
@@ -68,6 +73,8 @@ public class Company extends Basetest{
 //		r.keyPress(KeyEvent.VK_A);
 //		r.keyRelease(KeyEvent.VK_CONTROL);
 //		r.keyRelease(KeyEvent.VK_A);
+		CEONumber.clear();
+		Thread.sleep(3000);
 		CEONumber.sendKeys(prop.getProperty("CEONumber"));
 		Thread.sleep(3000);
 		Save.click();

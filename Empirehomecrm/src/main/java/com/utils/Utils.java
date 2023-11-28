@@ -53,21 +53,23 @@ public class Utils {
 
 		}
 	
-public static void robot(String path) throws Throwable {
-	Robot R=new Robot();
-	R.delay(2000);
-	StringSelection selection = new StringSelection(
-			path);
-	Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
-
-	R.keyPress(KeyEvent.VK_CONTROL);
-	R.keyPress(KeyEvent.VK_V);
-	R.keyRelease(KeyEvent.VK_V);
-	R.keyRelease(KeyEvent.VK_CONTROL);
-	R.keyPress(KeyEvent.VK_ENTER);
-	R.keyRelease(KeyEvent.VK_ENTER);
-	
-}
+		public static void robot(String filepath) throws Throwable {
+			
+			Robot rb = new Robot();
+			rb.delay(3000);
+			
+			StringSelection path = new StringSelection(filepath);
+			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null);
+			
+			rb.keyPress(KeyEvent.VK_CONTROL);
+			rb.keyPress(KeyEvent.VK_V);
+			
+			rb.keyRelease(KeyEvent.VK_CONTROL);
+			rb.keyRelease(KeyEvent.VK_V);
+			 
+			rb.keyPress(KeyEvent.VK_ENTER);
+			rb.keyRelease(KeyEvent.VK_ENTER);
+		}
 public static void Select(WebElement value,int index) {
 	Select sc=new Select(value);
 	sc.selectByIndex(index);

@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.base.Basetest;
+import com.utils.Utils;
 
 public class Addproduct extends Basetest {
 
@@ -116,17 +117,19 @@ public class Addproduct extends Basetest {
 
 		ac.moveToElement(textbox14).click().build().perform();
 		Thread.sleep(2000);
-		StringSelection selection = new StringSelection(
-				"\"C:\\Users\\Yobu\\Downloads\\emp.jpg\"");
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
-
-		R.keyPress(KeyEvent.VK_CONTROL);
-		R.keyPress(KeyEvent.VK_V);
-		R.keyRelease(KeyEvent.VK_V);
-		R.keyRelease(KeyEvent.VK_CONTROL);
-		R.keyPress(KeyEvent.VK_ENTER);
-		R.keyRelease(KeyEvent.VK_ENTER);
-		Thread.sleep(2000);
+		
+		Utils.robot("path");
+//		StringSelection selection = new StringSelection(
+//				"\"C:\\Users\\Yobu\\Downloads\\emp.jpg\"");
+//		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
+//
+//		R.keyPress(KeyEvent.VK_CONTROL);
+//		R.keyPress(KeyEvent.VK_V);
+//		R.keyRelease(KeyEvent.VK_V);
+//		R.keyRelease(KeyEvent.VK_CONTROL);
+//		R.keyPress(KeyEvent.VK_ENTER);
+//		R.keyRelease(KeyEvent.VK_ENTER);
+//		Thread.sleep(2000);
 		textbox15.click();
 	}
 }

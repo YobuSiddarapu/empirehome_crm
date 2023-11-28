@@ -43,30 +43,31 @@ public class Company extends Basetest{
 		Thread.sleep(3000);
 		pencil.click();
 		Thread.sleep(3000);
-		Robot r=new Robot();
-		CompanyName.click();
-		r.keyPress(KeyEvent.VK_CONTROL);
-		r.keyPress(KeyEvent.VK_A);
-		r.keyRelease(KeyEvent.VK_CONTROL);
-		r.keyRelease(KeyEvent.VK_A);
+		//Robot r=new Robot();
 		CompanyName.sendKeys(prop.getProperty("CompanyName"));
+		
+//		r.keyPress(KeyEvent.VK_CONTROL);
+//		r.keyPress(KeyEvent.VK_A);
+//		r.keyRelease(KeyEvent.VK_CONTROL);
+//		r.keyRelease(KeyEvent.VK_A);
+	//	CompanyName.sendKeys(prop.getProperty("CompanyName"));
 		
 		
 		Thread.sleep(3000);
 		CompanyAddress.sendKeys(prop.getProperty("CompanyAddress"));
 		Thread.sleep(3000);
 		CEOName.click();
-		r.keyPress(KeyEvent.VK_CONTROL);
-		r.keyPress(KeyEvent.VK_A);
-		r.keyRelease(KeyEvent.VK_CONTROL);
-		r.keyRelease(KeyEvent.VK_A);
+//		r.keyPress(KeyEvent.VK_CONTROL);
+//		r.keyPress(KeyEvent.VK_A);
+//		r.keyRelease(KeyEvent.VK_CONTROL);
+//		r.keyRelease(KeyEvent.VK_A);
 		CEOName.sendKeys(prop.getProperty("CEOName"));
 		Thread.sleep(3000);
 		CEONumber.click();
-		r.keyPress(KeyEvent.VK_CONTROL);
-		r.keyPress(KeyEvent.VK_A);
-		r.keyRelease(KeyEvent.VK_CONTROL);
-		r.keyRelease(KeyEvent.VK_A);
+//		r.keyPress(KeyEvent.VK_CONTROL);
+//		r.keyPress(KeyEvent.VK_A);
+//		r.keyRelease(KeyEvent.VK_CONTROL);
+//		r.keyRelease(KeyEvent.VK_A);
 		CEONumber.sendKeys(prop.getProperty("CEONumber"));
 		Thread.sleep(3000);
 		Save.click();

@@ -7,6 +7,7 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Cell;
@@ -18,9 +19,14 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Utils {
+import com.base.Basetest;
+
+public class Utils extends Basetest {
 
 	
        
@@ -87,8 +93,10 @@ public static void takeScreenshotAtEndOfTest(WebDriver driver) throws IOExceptio
 	
 	
 }
-
-
+public static void waits(WebElement element) {
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
+	wait.until(ExpectedConditions.invisibilityOf(element));
+}
 
 
 
